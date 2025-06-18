@@ -1,5 +1,24 @@
-O SmartEnergyBot foi pensado para ser um assistente simples e funcional na automação de energia. Toda a estrutura do código foi organizada de forma bem clara, separando cada tarefa em funções específicas, o que deixa tudo mais fácil de se utilizar
-As funções obter_dados_sensor(), acionar_carga() e desacionar_carga() são responsáveis por simular a leitura dos sensores e controlar o acionamento da carga.
-A função processar_comando() permite a interação do usuário com o sistema através de comandos de voz simulados, como “ligar carga”, “desligar carga” e “status”.
-A função principal main() nos ajuda a concentrar o fluxo principal do programa, fazendo a leitura contínua dos dados inputados pelo sensor, avaliando se o consumo ultrapassa o limite e permitindo que o usuário insira comandos para interagir com o sistema.
-Além disso, o uso do try-except permite uma finalização segura da aplicação, seja por comando ou por interrupção manual.
+SmartEnergyBot
+Um protótipo de automação de energia, que simula o funcionamento de um assistente inteligente capaz de monitorar o consumo de energia e controlar uma carga elétrica automaticamente ou via comandos do usuário.
+
+
+Instalação:
+Clone o repositório ou copie o código-fonte.
+
+Execute o arquivo Python no terminal ou em um ambiente de desenvolvimento
+
+Uso:
+
+O sistema lê constantemente os dados simulados de um sensor de energia. Se o consumo ultrapassar o limite pré-definido (100 Watts, por padrão), o SmartEnergyBot desliga automaticamente a carga para evitar sobrecarga.
+Além disso, o usuário pode interagir com o assistente utilizando os seguintes comandos:
+
+ligar carga → Liga a carga
+desligar carga → Desliga a carga
+status → Mostra o consumo atual e informa se a carga está ligada ou desligada
+saida → Encerra o programa
+
+Tecnologias:
+Python 3
+
+Adendo:
+Este projeto é apenas um protótipo funcionando com base em dados simulados.
